@@ -1,2 +1,4 @@
 # Java-easy
-Tasks - level: easy
+Tasks - level: easy 
+Learning Java
+
