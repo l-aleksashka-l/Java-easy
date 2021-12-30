@@ -49,5 +49,26 @@ public class ListHashMap{
         treeMap.put("ананас", 3);
         treeMap.put("банан", 4);
         System.out.println("TreeMap: " + treeMap);
+
+       /* Comparator comparator = new Comparator() {
+            @Override
+            public int compare(Object o1, Object o2) {
+                return 0;
+            }
+        };
+        SortedMap sortedMap = new TreeMap(comparator)
+        */
+        SortedMap sortedMap = new TreeMap();
+        sortedMap.put("a", "one");
+        sortedMap.put("b", "two");
+        sortedMap.put("c", "three");
+        sortedMap.put("d", "four");
+
+        System.out.println("SortedMap: " + sortedMap);
+        System.out.println("First key: " + sortedMap.firstKey());
+        System.out.println("Last key: " + sortedMap.lastKey());
+        System.out.println(sortedMap.headMap("b"));
+        System.out.println(sortedMap.tailMap("c"));
+        System.out.println(sortedMap.subMap("b", "c"));
     }
 }
