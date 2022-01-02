@@ -42,7 +42,7 @@ class Program {
         System.out.print("Value: ");
         increminator.start();
         for(int i = 0; i <= 3; i++){
-            Thread.sleep(i*2*1000);
+            Thread.sleep(i*4*1000);
             increminator.changeAction();
         }
         //increminator.finish();
