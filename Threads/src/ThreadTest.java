@@ -11,6 +11,9 @@ public class ThreadTest {
         System.out.println("Thread Group: " + threadGroup.getName());
         System.out.println("Parent Group: " + threadGroup.getParent().getName() + "\n");
         //3
+        StackTraceElement[] stackTraceElement = new Thread().currentThread().getStackTrace();
+        System.out.println(stackTraceElement + "]\n");
+        //4
         Thread threadError = Thread.currentThread();
         threadError.setUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler()
         {
@@ -21,6 +24,6 @@ public class ThreadTest {
             }
         });
         System.out.println(2/0);
-
     }
+
 }
