@@ -15,27 +15,27 @@ public class Main {
     }
 }
 
-class Insurance{
+class Insurance {
     public static final int LOW = 100;
 
-    public int premium(){
+    public int premium() {
         return LOW;
     }
 
-    public static String category(){
+    public static String category() {
         return "Insurance";
     }
 
 }
 
-class CarInsurance extends Insurance{
+class CarInsurance extends Insurance {
     public static final int HIGH = 200;
 
-    public int premium(){
+    public int premium() {
         return HIGH;
     }
 
-    public static String category(){
+    public static String category() {
         return "Car Insurance";
     }
 
